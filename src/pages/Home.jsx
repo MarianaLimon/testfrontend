@@ -3,6 +3,7 @@ import CharacterCard from "../components/CharacterCard"
 import { FaStar } from "react-icons/fa"
 import SearchBar from "../components/SearchBar"
 import Pagination from "../components/Pagination"
+import FavoriteTopButton from "../components/FavoriteTopButton";
 
 
 function Home() {
@@ -59,20 +60,15 @@ function Home() {
             <div className="top-bar">
                 <div className="search-container">
                     <SearchBar
-                        value={search}
-                        onChange={(value) => {
-                            setSearch(value)
-                            setCurrentPage(1)
-                        }}
+                    value={search}
+                    onChange={(value) => {
+                        setSearch(value);
+                        setCurrentPage(1);
+                    }}
                     />
                 </div>
 
-                <button className="favorites-btn">
-                    <span>Mis favoritos</span>
-                    <div className="fav-icon">
-                        <FaStar />
-                    </div>
-                </button>
+                <FavoriteTopButton />
             </div>
 
             <div className="container-grid">
