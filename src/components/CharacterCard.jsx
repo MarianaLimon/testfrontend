@@ -1,20 +1,24 @@
-import { useNavigate, useLocation } from "react-router-dom"; 
+import { useNavigate, useLocation } from "react-router-dom";
+import FavoriteButton from "./FavoriteButton";
 
 function CharacterCard({ character }) {
-    const navigate = useNavigate();
-    const location = useLocation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
-    const openModal = () => {
-        navigate(`/character/${character.id}`, { state: { background: location } });
-    };
+  const openModal = () => {
+    navigate(`/character/${character.id}`, { state: { background: location } });
+  };
 
-    return (
-        <div onClick={openModal} className="card">
-        <img src={character.image} alt={character.name} />
-        <h3 className="char-name">{character.name}</h3>
-        {/* Aquí luego va el botón de favoritos ❤️ */}
-        </div>
-    );
-    }
+  return (
+    <div onClick={openModal} className="card">
+      <img src={character.image} alt={character.name} />
 
-export default CharacterCard
+      <div className="card-info">
+        <h3 className="card-title">{character.name}</h3>
+        <FavoriteButton characterId={character.id} character={character} />
+      </div>
+    </div>
+  );
+}
+
+export default CharacterCard;
