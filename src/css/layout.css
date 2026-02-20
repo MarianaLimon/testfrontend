@@ -1,0 +1,19 @@
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  color: #000;
+  font-weight: bold;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  margin-top: 1rem;
+}

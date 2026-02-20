@@ -1,0 +1,71 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.778);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 500px;
+  width: 260px;
+  height: 420px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 2.5rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 10px;
+  color: var(--color-danger);
+  background: #FFE1E1;
+  border-radius: 20px;
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 3px 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.character-name {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: .5rem;
+}
+
+.char-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .3rem;
+  margin: 10px 0;
+}
+
+.char {
+  font-size: 12px;
+  padding: 2px 3px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.character-status {background-color: #CCEFFF;}
+.character-gender {background-color: #CCD5FF;}
+.character-specie {background-color: #CCFFDA;}
+.character-origin {background-color: #F7F6CE;}
+.character-location {background-color: #FAE9D2;}

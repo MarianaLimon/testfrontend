@@ -1,0 +1,28 @@
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 35px;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--color-muted);
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  justify-content: flex-start;
+  padding-right: 22px;
+}
+
+.fav-icon-back {
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-secondary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; 
+  margin-left: 0;
+}
