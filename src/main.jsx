@@ -16,7 +16,7 @@ import './css/responsive.css';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/personajes/">
       <CharactersProvider>
         <FavoritesProvider> 
           <App />

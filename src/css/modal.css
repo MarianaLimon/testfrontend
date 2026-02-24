@@ -69,3 +69,7 @@
 .character-specie {background-color: #CCFFDA;}
 .character-origin {background-color: #F7F6CE;}
 .character-location {background-color: #FAE9D2;}
+
+.char.character-location {
+  grid-column: 1 / -1;
+}

@@ -13,6 +13,7 @@ function App() {
       <Routes location={background || location}>
         <Route path="/" element={<Home />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/character/:id" element={<CharacterModal />} />
       </Routes>
 
       {background && (

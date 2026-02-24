@@ -2,18 +2,23 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-/// <reference types="vitest" /> // Esto es opcional pero ayuda al autocompletado
+/// <reference types="vitest" />
 
 export default defineConfig({
   plugins: [react()],
+  
   resolve: {
     alias: {
       react: path.resolve("./node_modules/react"),
     },
   },
+
+  // Importante: define la base de tu SPA
+  base: "/personajes/",
+
   test: {
-    globals: true,           // permite usar describe, test, expect sin importarlos
-    environment: "jsdom",    // simula navegador
-    setupFiles: "./src/setupTests.js", // archivo opcional para configuraciones globales
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./src/setupTests.js",
   },
 });
